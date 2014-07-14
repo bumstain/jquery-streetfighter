@@ -1,0 +1,33 @@
+.black-space {
+	height: 100px;
+	width: 100%;
+	background-color: #000;
+}
+
+#top-banner {
+	top: 0;
+}
+
+#main {
+	height: 560px;
+	width: auto;
+}
+
+#ryu-div {
+	height: 560px;
+	width: 550px;
+	margin-left: 80px;
+	background-color: blue;
+	float: left;
+}
+
+#text-div {
+	height: 560px;
+	width: 650px;
+	background-color: red;
+	float: right;
+}
+
+#bottom-banner {
+	bottom: 0;
+}
