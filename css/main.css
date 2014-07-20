@@ -1,13 +1,17 @@
 body {
   background-color: black;
+
 }
 
 .main {
-  background-color: white;
+  background-image: url('../images/background-2.gif');
+  background-size: 1290px;
+  background-repeat: no-repeat;
+  width: 960px;
   margin-top: 110px;
   padding-left: 100px;
   min-width: 1200px;
-  height: 500px;
+  height: 600px;
 }
 
 .ryu-ready, .ryu-still, .ryu-throwing {
@@ -41,6 +45,8 @@ body {
 
 .ryu-cool {
   background-image: url('../images/ryu-cool.gif');
+  z-index: 4;
+  position: relative;
   display: none;
 }
 
@@ -57,4 +63,19 @@ body {
   top: 169px;
   left: 467px;
   float: left;
+}
+
+.instructions {
+  font-family: 'Press Start 2P', Helvetica, Arial, sans-serif;
+  font-size: 1.1em;
+  margin-top: -400px;
+  margin-right: 50px;
+  color: white;
+  width: 720px;
+  float: right;
+  text-align: right;
+}
+
+.instructions p {
+  padding-bottom: 15px;
 }
