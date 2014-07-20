@@ -45,9 +45,7 @@ body {
 
 .ryu-cool {
   background-image: url('../images/ryu-cool.gif');
-  z-index: 4;
-  position: relative;
-  display: none;
+  display: block;
 }
 
 .hadouken, .ryu-ready, .ryu-still, .ryu-throwing {
