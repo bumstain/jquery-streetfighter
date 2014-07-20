@@ -35,8 +35,8 @@ $(document).ready(function() {
   });
 });
 
-$(this).keydown(function(event) {
-    if(event.which == 88) {
+$(this).keydown(function(event) { 
+    if(event.which == 88) {   
       event.preventDefault();
       $('.ryu-still').hide();
       $('.ryu-throwing').hide();
@@ -46,7 +46,7 @@ $(this).keydown(function(event) {
   })
 
   $(this).keyup(function() {
-    event.preventDefault;
+    event.preventDefault();
     $('.ryu-cool').hide();
     $('.ryu-throwing').hide();
     $('.ryu-ready').hide();
