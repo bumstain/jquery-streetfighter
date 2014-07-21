@@ -26,6 +26,7 @@ $(document).ready(function() {
     $('.ryu-ready').hide();
     $('.ryu-throwing').show();
     $('.ryu-still').hide();
+    $('.ryu-cool').hide();
     $('.hadouken').finish().show()
     .animate(
       {'left': '860px'},
@@ -42,23 +43,26 @@ $(document).ready(function() {
     $('.ryu-ready').show();
   });
 
-
-  $(this).keydown(function(event) { 
-    if(event.which == 88) {   
-      event.preventDefault();
-      $('.ryu-still').hide();
-      $('.ryu-throwing').hide();
+  $('body').keydown(function(event) {
+    if(event.which == 88) {
+      // playKarateKid();
       $('.ryu-ready').hide();
+      $('.ryu-throwing').hide();
+      $('.ryu-still').hide();
       $('.ryu-cool').show();
     }
   })
 
-  $(this).keyup(function() {
-    event.preventDefault();
-    $('.ryu-cool').hide();
-    $('.ryu-throwing').hide();
-    $('.ryu-ready').hide();
-    $('.ryu-still').show();
+  .keyup(function(event) {
+    if(event.which == 88) {
+      $('.ryu-cool').hide();
+      $('.ryu-throwing').hide();
+      $('.ryu-ready').hide();
+      $('.ryu-still').show();
+      // $('#cool-sound')[0].pause();
+      // $('#cool-sound')[0].load();
+    }
+
   });
   
   function playHadouken () {
@@ -74,9 +78,9 @@ $(document).ready(function() {
   }
 
   function playKarateKid () {
-    $('#KarateKid-sound')[0].volume = 0.5;
-    $('#KarateKid-sound')[0].load();
-    $('#KarateKid-sound')[0].play();
+    $('#cool-sound')[0].volume = 0.5;
+    $('#cool-sound')[0].load();
+    $('#cool-sound')[0].play();
   }
 
 });
