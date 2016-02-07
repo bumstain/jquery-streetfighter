@@ -12,13 +12,11 @@ $(document).ready(function() {
     $('.ryu-ready').show();
   })
 
-
   .mouseleave(function() {
   //show Ryu's still state
     $('.ryu-ready').hide();
     $('.ryu-still').show();
   })
-
 
   .mousedown(function() {
   //play hadouken sound; show Ryu's throwing state; animate hadouken
@@ -45,7 +43,7 @@ $(document).ready(function() {
 
   $('body').keydown(function(event) {
     if(event.which == 88) {
-      // playKarateKid();
+      playKarateKid();
       $('.ryu-ready').hide();
       $('.ryu-throwing').hide();
       $('.ryu-still').hide();
@@ -64,7 +62,8 @@ $(document).ready(function() {
     }
 
   });
-  
+
+
   function playHadouken () {
     $('#hadouken-sound')[0].volume = 0.5;
     $('#hadouken-sound')[0].load();
@@ -78,11 +77,10 @@ $(document).ready(function() {
   }
 
   function playKarateKid () {
-    $('#cool-sound')[0].volume = 0.5;
-    $('#cool-sound')[0].load();
-    $('#cool-sound')[0].play();
+    $('#fight-song')[0].volume = 0.5;
+    $('#fight-song')[0].load();
+    $('#fight-song')[0].play();
   }
-
 });
 
 
